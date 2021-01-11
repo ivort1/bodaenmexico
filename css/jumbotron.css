@@ -1,0 +1,59 @@
+.jumbotron-fluid {
+	background: url("../images/ivan_marilynn_front_desktop.JPG");
+	background-position: center center;
+	background-size: cover;
+	border-radius: 0;
+	color: #fff;
+	font-family: "Josefin Sans", sans-serif;
+	font-weight: 700;
+	height: 93vh;
+	margin-bottom: 0;
+	text-align: center;
+
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#rings-image {
+	width: 4rem;
+	height: 4rem;
+}
+
+.rsvp-button {
+	background-color: #fff;
+	border-color: transparent;
+	border-radius: 0.3rem;
+	border-style: solid;
+	color: #303030;
+	font-size: 1.5rem;
+	padding: 0.75rem 2rem;
+	text-decoration: none;
+	transition: transform 0.6s; /* Animation */
+}
+
+.rsvp-button:active {
+	border-color: #fff;
+	text-decoration: none;
+}
+
+.rsvp-button:hover {
+	background-color: #fff;
+	border-color: #fff;
+	transform: scale(
+		1.1
+	); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.rsvp-button:visited {
+	border-color: #fff;
+}
+
+.resume-button a:hover {
+	text-decoration: none;
+}
+
+.invitation-image {
+	margin-right: 0.5rem;
+	width: 3rem;
+	height: 3rem;
+}

@@ -1,0 +1,9 @@
+.container-fluid.hotels {
+	/* background-color: blueviolet; */
+	padding: 3rem;
+	text-align: center;
+}
+
+.card {
+	margin-top: 3rem;
+}

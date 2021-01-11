@@ -1,0 +1,9 @@
+.container.travel-information {
+	/* background-color: green; */
+	padding: 5rem;
+	text-align: center;
+}
+
+.row.travel-info-row {
+	margin-top: 3rem;
+}
