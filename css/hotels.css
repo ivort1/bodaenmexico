@@ -11,3 +11,53 @@
 .card-website-link {
 	margin-right: 1rem;
 }
+
+#hotel-los-juaninos-card {
+	border-color: transparent;
+	box-shadow: 0 0 2rem #303030;
+}
+
+.ribbon {
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	overflow: hidden;
+}
+
+.ribbon span {
+	width: 225px;
+	padding: 10px 0px;
+	background-color: #efe7da;
+	font-size: 0.7rem;
+	display: block;
+	position: absolute;
+	top: 30px;
+	left: -25px;
+	transform: rotate(45deg);
+	text-align: center;
+	color: #303030;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.ribbon:after,
+.ribbon:before {
+	content: "";
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid #efe7da;
+	border-right: 5px solid transparent;
+	border-left: 5px solid #efefe7da;
+	position: absolute;
+}
+
+.ribbon:before {
+	bottom: 0.831rem;
+	right: 0;
+}
+
+.ribbon:after {
+	top: 0;
+	left: 0.8rem;
+}
