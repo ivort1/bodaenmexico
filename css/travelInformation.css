@@ -1,9 +1,15 @@
-.container.travel-information {
-	/* background-color: green; */
-	padding: 5rem;
+.container-fluid.travel-information {
+	background-color: #efe7da;
+	padding: 4rem 4rem;
 	text-align: center;
 }
 
 .row.travel-info-row {
 	margin-top: 3rem;
+}
+
+.travel-information-icons {
+	height: 3rem;
+	margin-bottom: 1rem;
+	width: 3rem;
 }

@@ -3,8 +3,7 @@
 }
 
 .navbar-dark .navbar-toggler {
-	border-color: #303030;
-	border-radius: 0;
+	border-color: transparent;
 	color: #303030;
 	margin: auto;
 	padding: 0.5rem 1rem;

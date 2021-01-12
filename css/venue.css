@@ -1,7 +1,7 @@
 .container-fluid.venue {
-	/* background-color: red; */
+	background-color: #efe7da;
 	height: auto;
-	padding: 3rem;
+	padding: 4rem 1rem;
 	text-align: center;
 }
 

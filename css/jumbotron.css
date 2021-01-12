@@ -1,14 +1,15 @@
 .jumbotron-fluid {
-	background: url("../images/ivan_marilynn_front_desktop.JPG");
+	background: url("../images/ivan_marilynn_front_mobile.jpg");
 	background-position: center center;
 	background-size: cover;
 	border-radius: 0;
 	color: #fff;
 	font-family: "Josefin Sans", sans-serif;
-	font-weight: 700;
-	height: 93vh;
+	font-weight: 500;
+	height: 100vh;
 	margin-bottom: 0;
 	text-align: center;
+	text-shadow: 1px 2px #000000;
 
 	display: flex;
 	justify-content: center;
@@ -33,19 +34,19 @@
 }
 
 .rsvp-button:active {
-	border-color: #fff;
 	text-decoration: none;
 }
 
 .rsvp-button:hover {
 	background-color: #fff;
-	border-color: #fff;
+	border-color: transparent;
 	transform: scale(
 		1.1
 	); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
+
 .rsvp-button:visited {
-	border-color: #fff;
+	border-color: transparent;
 }
 
 .resume-button a:hover {

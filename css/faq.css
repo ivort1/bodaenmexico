@@ -1,9 +1,10 @@
-.container.faqs {
-	/* background-color: yellow; */
-	padding: 5rem;
+.container-fluid.faqs {
+	background-color: #fff;
+	color: #303030;
+	padding: 4rem 4rem;
 	text-align: center;
 }
 
-.faq-question {
+.faq-body {
 	margin-top: 3rem;
 }
