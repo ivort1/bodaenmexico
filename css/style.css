@@ -2,6 +2,11 @@ html {
 	scroll-behavior: smooth;
 }
 
+body {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+}
+
 .fas {
 	margin-right: 0.5rem;
 }
@@ -26,5 +31,6 @@ a:hover:not(a.nav-link) {
 }
 
 h2 {
+	font-family: "Great Vibes", serif;
 	margin-bottom: 2rem;
 }

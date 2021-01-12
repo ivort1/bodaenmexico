@@ -1,19 +1,42 @@
-.jumbotron-fluid {
+.flex-master {
 	background: url("../images/jumbotron/ivan_marilynn_front_mobile.jpg");
 	background-position: center center;
 	background-size: cover;
 	border-radius: 0;
 	color: #fff;
-	font-family: "Josefin Sans", sans-serif;
-	font-weight: 500;
 	height: 100vh;
 	margin-bottom: 0;
 	text-align: center;
-	text-shadow: 1px 2px #000000;
+	text-shadow: 1px 1px #bebebe;
+	position: relative;
 
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	flex-direction: column;
+	position: relative;
+}
+
+.jumbotron-h1 {
+	font-family: "Great Vibes", serif;
+	font-size: 4rem;
+}
+
+.flex-2 {
+	bottom: 0;
+	position: absolute;
+}
+
+.jumbotron-text {
+	align-self: flex-end;
+	font-family: "Gentium Basic", serif;
+	font-style: italic;
+	text-shadow: 1px 1px #bebebe;
+}
+
+.jumbotron-rsvp {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
 }
 
 #rings-image {
@@ -31,6 +54,7 @@
 	padding: 0.75rem 2rem;
 	text-decoration: none;
 	transition: transform 0.6s; /* Animation */
+	vertical-align: middle;
 }
 
 .rsvp-button:active {
