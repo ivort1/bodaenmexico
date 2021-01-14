@@ -66,6 +66,13 @@
 @media (min-width: 100em) {
 	.container-fluid.hotels {
 		padding: 12rem 17rem;
+	}
+
+	#hotels-h2 {
+		text-align: left;
+	}
+
+	.hotels-text {
 		text-align: left;
 	}
 }
