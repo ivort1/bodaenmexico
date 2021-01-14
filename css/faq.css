@@ -8,3 +8,15 @@
 .faq-body {
 	margin-top: 3rem;
 }
+
+/* Desktop */
+@media (min-width: 64.01em) {
+	.container-fluid.faqs {
+		padding: 12rem 20rem;
+		text-align: left;
+	}
+
+	.container-fluid.faqs h2 {
+		text-align: left;
+	}
+}

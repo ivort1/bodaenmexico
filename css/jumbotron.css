@@ -1,5 +1,5 @@
 .flex-master {
-	background: url("../images/jumbotron/ivan-marilynn-front-mobile.webp");
+	background: url("../images/jumbotron/ivan-marilynn-mobile-optimized.webp");
 	background-position: center center;
 	background-size: cover;
 	border-radius: 0;
@@ -80,4 +80,40 @@
 	margin-right: 0.5rem;
 	width: 3rem;
 	height: 3rem;
+}
+
+/* Desktop */
+@media (min-width: 64.01em) {
+	.flex-master {
+		background: url("../images/jumbotron/ivan-marilynn-front-desktop.jpg");
+		background-repeat: no-repeat;
+		background-position: center right;
+		background-size: cover;
+	}
+
+	.jumbotron-h1 {
+		font-size: 7rem;
+	}
+
+	.jumbotron-text {
+		font-size: 1.5rem;
+	}
+}
+
+/* Tablet */
+@media (min-width: 47em) and (max-width: 64em) {
+	.flex-master {
+		background: url("../images/jumbotron/ivan-marilynn-mobile-HD.jpg");
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+	}
+
+	.jumbotron-h1 {
+		font-size: 6rem;
+	}
+
+	.jumbotron-text {
+		font-size: 1.5rem;
+	}
 }

@@ -4,3 +4,17 @@
 	padding: 4rem 1rem;
 	text-align: center;
 }
+
+/* Desktop */
+@media (min-width: 64.01em) {
+	.church-venue-text {
+		font-size: 1.5rem;
+	}
+}
+
+/* Tablet */
+@media (min-width: 47em) and (max-width: 64em) {
+	.church-venue-text {
+		font-size: 1.5rem;
+	}
+}

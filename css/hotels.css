@@ -61,3 +61,21 @@
 	top: 0;
 	left: 0.8rem;
 }
+
+/* Desktop */
+@media (min-width: 100em) {
+	.container-fluid.hotels {
+		padding: 12rem 17rem;
+		text-align: left;
+	}
+}
+
+@media (min-width: 64.01em) {
+	#hotels-h2 {
+		text-align: left;
+	}
+
+	.hotels-text {
+		text-align: left;
+	}
+}

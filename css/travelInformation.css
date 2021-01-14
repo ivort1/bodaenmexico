@@ -13,3 +13,32 @@
 	margin-bottom: 1rem;
 	width: 3rem;
 }
+
+/* Desktop */
+@media (min-width: 64.01em) {
+	.container-fluid.travel-information {
+		padding: 12rem 20rem;
+		text-align: right;
+	}
+
+	.travel-information-icons {
+		height: 5rem;
+		margin-bottom: 0rem;
+		width: 5rem;
+	}
+
+	.row.travel-info-row {
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+		align-items: center;
+	}
+}
+
+/* Tablet */
+@media (min-width: 47em) and (max-width: 64em) {
+	.row.travel-info-row {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
