@@ -17,6 +17,40 @@
 	box-shadow: 0 0 2rem #303030;
 }
 
+.kayak-logo {
+	width: 7rem;
+	height: auto;
+}
+
+.kayak-button {
+	background-color: transparent;
+	border-color: transparent;
+	border-radius: 0.3rem;
+	border-style: solid;
+	color: rgb(255, 92, 0);
+	font-size: 0.8rem;
+	font-weight: 700;
+	padding: 0.75rem 2rem;
+	text-decoration: none;
+	transition: transform 0.6s; /* Animation */
+	vertical-align: middle;
+}
+
+.kayak-button:active {
+	text-decoration: none;
+}
+
+.kayak-button:hover {
+	border-color: transparent;
+	transform: scale(
+		1.05
+	); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.kayak-button:visited {
+	border-color: transparent;
+}
+
 .ribbon {
 	width: 150px;
 	height: 150px;
@@ -84,5 +118,25 @@
 
 	.hotels-text {
 		text-align: left;
+	}
+}
+
+/* Hotel cards */
+@media (min-width: 62em) {
+	.card-body {
+		position: relative;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.hotels-flex-2 {
+		bottom: 0;
+		position: absolute;
+	}
+
+	.white-space {
+		height: 3em;
+		width: auto;
 	}
 }
