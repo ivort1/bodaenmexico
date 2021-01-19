@@ -4,6 +4,7 @@
 	border-color: transparent;
 	border-width: 0 0 0.1rem 0;
 	box-shadow: 0 0 2rem #303030;
+	
 }
 
 .navbar-dark .navbar-toggler {
@@ -16,7 +17,6 @@
 .navbar-dark .navbar-nav .nav-link {
 	color: #808080;
 	font-family: "Montserrat", sans-serif;
-	font-weight: 500;
 	margin-left: 1rem;
 	transition: color 0.2 ease-out;
 	-webkit-transition: color 0.2s ease-out;
@@ -26,9 +26,9 @@
 	color: #000;
 }
 
-.navbar-dark .navbar-nav .nav-link:active {
+/* .navbar-dark .navbar-nav .nav-link:active {
 	color: #808080;
-}
+} */
 
 .fa-bars {
 	margin: auto 0.3rem auto 0;

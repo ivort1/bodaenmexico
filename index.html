@@ -29,13 +29,13 @@
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="/css/style.css" />
 		<link rel="stylesheet" href="/css/navigationBar.css" />
+		<link rel="stylesheet" href="/css/changeLanguageNotification.css" />
 		<link rel="stylesheet" href="/css/jumbotron.css" />
 		<link rel="stylesheet" href="/css/ceremony.css" />
 		<link rel="stylesheet" href="/css/venue.css" />
 		<link rel="stylesheet" href="/css/hotels.css" />
 		<link rel="stylesheet" href="/css/travelInformation.css" />
 		<link rel="stylesheet" href="/css/faq.css" />
-		<!-- <link rel="stylesheet" href="/main.css" /> -->
 
 		<title>Marilynn & Ivan | Our Wedding</title>
 		
@@ -50,10 +50,10 @@
 		<meta name="theme-color" content="#ffffff">
 	</head>
 
-	<body class="langWrap">
+	<body class="langWrap preload">
 		<!-- Navbar -->
 		<nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-			<div class="container">
+			<div class="container" id="remove">
 				<!-- <a class="navbar-brand" href="#">Navbar</a> -->
 				<button
 					class="navbar-toggler"
@@ -67,19 +67,35 @@
 					<i class="fas fa-bars"></i>
 					<span class="menu-text">MENU</span>
 				</button>
+
+				<div class="collapse navbar-collapse"></div> 
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<div class="navbar-nav ml-auto">
+					<div class="navbar-nav">
 						<a class="nav-link js-scroll-trigger" href="#rsvp">RSVP</a>
-						<a class="nav-link js-scroll-trigger" href="#ceremony">Ceremony</a>
+						<a class="nav-link js-scroll-trigger" href="#ceremony" >Ceremony</a>
 						<a class="nav-link js-scroll-trigger" href="#venue">Venue</a>
 						<a class="nav-link js-scroll-trigger" href="#hotels">Hotels</a>
 						<a class="nav-link js-scroll-trigger" href="#travel-information">Travel Information</a>
 						<a class="nav-link js-scroll-trigger" href="#faqs">FAQs</a>
+						<a class="nav-link languageLinks js-scroll-trigger active" href="javascript:void(0)" language="english">English</a>
+						<a class="nav-link languageLinks js-scroll-trigger" href="javascript:void(0)" language="spanish">Español</a>
 					</div>
 				</div>
 			</div>
 		</nav>
 
+		<!-- Change Language Notification -->
+		<div class="animated fadeInDown" id="changeLanguageNotification">
+			<div class="langNotFlex1">
+				<button id="languageButton" onclick="removeLanguageNotification()"><i class="fas fa-times"></i></button>
+			</div>
+			<div class="langNotFlex2">
+				<div>Change the language in the menu</div>
+				<div>Cambiar el idioma en el menú</div>
+			</div>
+		</div>
+
+		<!-- RSVP Jumbotron -->
 		<div class="container-fluid flex-master" id="rsvp">
 			<div class="flex-1">
 				<div class="jumbotron-header">
@@ -97,10 +113,6 @@
 							/>RSVP
 						</button>
 					</a>
-						<div>
-							<a href="#" language='english' class="active">English</a>
-							<a href="#" language='spanish'>Español</a>
-						</div>
 				</div>
 			</div>
 
@@ -109,40 +121,11 @@
 					<span class="rsvpDate">Friday, July 30, 2021</span>
 					<br>
 					<span>Morelia, Michoacán</span>
-					<p>The deadline to RSVP is Saturday, February 27.</p>
+					<p>The deadline to RSVP is Sunday, March 14.</p>
 				</div>
 			</div>
 
 		</div>
-
-		<!-- RSVP Jumbotron -->
-		<!-- <div class="jumbotron jumbotron-fluid" id="rsvp">
-			<div class="bg-image"></div>
-			<div class="container">
-				<h1 class="jumbotron-h1">Marilynn & Ivan's Wedding</h1>
-				
-				<a
-					href="https://rsvpify.com/"
-					target="_blank"
-					rel="noopener noreferrer"
-					><button class="rsvp-button jumbotron-rsvp">
-						<img
-							class="invitation-image"
-							src="/images/jumbotron/wedding-card.svg"
-							alt="invitation"
-						/>RSVP
-					</button></a
-				>
-				<div class="jumbotron-text">
-					<p>
-						Friday, July 30, 2021
-						<br />Morelia, Michoacán
-					</p>
-					<p>The deadline to RSVP is Saturday, February 27.</p>
-				</div>
-				
-			</div>
-		</div> -->
 
 		<!-- Ceremony -->
 		<div class="container-fluid ceremony" id="ceremony">
@@ -743,8 +726,6 @@
 			</div>
 		</div>
 
-		<script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
-
 		<!-- Bootstrap scripts -->
 		<script
 			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -765,6 +746,7 @@
 		></script>
 
 		<!-- Custom JavaScript -->
+		<script src="/javascript/removeLanguageNotification.js"></script>
 		<script src="/javascript/languageDatabase.js"></script>
 		<script src="/javascript/switchLanguages.js"></script>
 		<script src="javascript/navbarCollapse.js" type="text/javascript"></script>

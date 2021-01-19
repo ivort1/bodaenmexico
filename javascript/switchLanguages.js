@@ -1,5 +1,5 @@
 const langEl = document.querySelector(".langWrap");
-			const link = document.querySelectorAll("a");
+			const link = document.querySelectorAll(".languageLinks");
 			const titleEl = document.querySelector(".rsvpTitle");
 			const descrEl = document.querySelector(".rsvpDate");
 
