@@ -39,3 +39,10 @@
 	font-weight: 400;
 	margin: auto 0;
 }
+
+/* Remove | when in mobile view */
+@media (max-width: 61.9375em) {
+	#nav-divider {
+        display: none;
+    }
+}
