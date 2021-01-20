@@ -29,6 +29,7 @@
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="/css/style.css" />
 		<link rel="stylesheet" href="/css/navigationBar.css" />
+		<link rel="stylesheet" href="/css/changeLanguageNotification.css" />
 		<link rel="stylesheet" href="/css/jumbotron.css" />
 		<link rel="stylesheet" href="/css/ceremony.css" />
 		<link rel="stylesheet" href="/css/venue.css" />
@@ -49,10 +50,10 @@
 		<meta name="theme-color" content="#ffffff">
 	</head>
 
-	<body>
+	<body class="langWrap">
 		<!-- Navbar -->
 		<nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-			<div class="container">
+			<div class="container" id="remove">
 				<!-- <a class="navbar-brand" href="#">Navbar</a> -->
 				<button
 					class="navbar-toggler"
@@ -66,23 +67,40 @@
 					<i class="fas fa-bars"></i>
 					<span class="menu-text">MENU</span>
 				</button>
+
+				<div class="collapse navbar-collapse"></div> 
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<div class="navbar-nav ml-auto">
+					<div class="navbar-nav">
 						<a class="nav-link js-scroll-trigger" href="#rsvp">RSVP</a>
-						<a class="nav-link js-scroll-trigger" href="#ceremony">Ceremony</a>
-						<a class="nav-link js-scroll-trigger" href="#venue">Venue</a>
-						<a class="nav-link js-scroll-trigger" href="#hotels">Hotels</a>
-						<a class="nav-link js-scroll-trigger" href="#travel-information">Travel Information</a>
-						<a class="nav-link js-scroll-trigger" href="#faqs">FAQs</a>
+						<a class="nav-link js-scroll-trigger navCeremony" href="#ceremony" >Ceremony</a>
+						<a class="nav-link js-scroll-trigger navVenue" href="#venue">Venue</a>
+						<a class="nav-link js-scroll-trigger navHotels" href="#hotels">Hotels</a>
+						<a class="nav-link js-scroll-trigger navTravelInformation" href="#travel-information">Travel Information</a>
+						<a class="nav-link js-scroll-trigger navFAQ" href="#faqs">FAQs</a>
+						<a class="nav-link js-scroll-trigger" id="nav-divider">|</a>
+						<a class="nav-link languageLinks js-scroll-trigger active" href="javascript:void(0)" language="english">English</a>
+						<a class="nav-link languageLinks js-scroll-trigger" href="javascript:void(0)" language="spanish">Español</a>
 					</div>
 				</div>
 			</div>
 		</nav>
 
+		<!-- Change Language Notification -->
+		<div class="animated fadeInDown" id="changeLanguageNotification">
+			<div class="langNotFlex1">
+				<button id="languageButton" onclick="removeLanguageNotification()"><i class="fas fa-times"></i></button>
+			</div>
+			<div class="langNotFlex2">
+				<div>Change the language in the menu</div>
+				<div>Cambiar el idioma en el menú</div>
+			</div>
+		</div>
+
+		<!-- RSVP Jumbotron -->
 		<div class="container-fluid flex-master" id="rsvp">
 			<div class="flex-1">
 				<div class="jumbotron-header">
-					<h1 class="jumbotron-h1">Marilynn & Ivan's Wedding</h1>
+					<h1 class="jumbotron-h1 rsvpTitle">Marilynn & Ivan's Wedding</h1>
 					
 					<a
 						href="http://ortizmurowedding.rsvpify.com"
@@ -101,53 +119,23 @@
 
 			<div class="flex-2">
 				<div class="jumbotron-text">
-					<p>
-						Friday, July 30, 2021
-						<br />Morelia, Michoacán
-					</p>
-					<p>The deadline to RSVP is Sunday, March 14.</p>
+					<span class="rsvpDate">Friday, July 30, 2021</span>
+					<br>
+					<span>Morelia, Michoacán</span>
+					<p class="rsvpDeadline">The deadline to RSVP is Sunday, March 14</p>
 				</div>
 			</div>
 
 		</div>
 
-		<!-- RSVP Jumbotron -->
-		<!-- <div class="jumbotron jumbotron-fluid" id="rsvp">
-			<div class="bg-image"></div>
-			<div class="container">
-				<h1 class="jumbotron-h1">Marilynn & Ivan's Wedding</h1>
-				
-				<a
-					href="https://rsvpify.com/"
-					target="_blank"
-					rel="noopener noreferrer"
-					><button class="rsvp-button jumbotron-rsvp">
-						<img
-							class="invitation-image"
-							src="/images/jumbotron/wedding-card.svg"
-							alt="invitation"
-						/>RSVP
-					</button></a
-				>
-				<div class="jumbotron-text">
-					<p>
-						Friday, July 30, 2021
-						<br />Morelia, Michoacán
-					</p>
-					<p>The deadline to RSVP is Saturday, February 27.</p>
-				</div>
-				
-			</div>
-		</div> -->
-
 		<!-- Ceremony -->
 		<div class="container-fluid ceremony" id="ceremony">
 			<div class="row align-items-center">
 				<div class="col-lg-6">
-					<h2>Ceremony</h2>
+					<h2 class="ceremonyTitle">Ceremony</h2>
 					<p class="church-venue-text">
 						<i class="fas fa-church"></i
-						><a
+						><a class="ceremonyNameOfChurch"
 							href="https://www.google.com/maps/place/Morelia+Cathedral/@19.7024226,-101.194546,17z/data=!4m5!3m4!1s0x842d0e71a95bc4ed:0xaf13bc43e8e69af7!8m2!3d19.7024228!4d-101.1923184"
 							target="_blank"
 							rel="noopener noreferrer"
@@ -233,7 +221,7 @@
 		<div class="container-fluid venue" id="venue">
 			<div class="row align-items-center">
 				<div class="col-lg-6 order-lg-2">
-					<h2>Venue</h2>
+					<h2 class="venueTitle">Venue</h2>
 					<p class="church-venue-text">
 						<i class="far fa-building"></i
 						><a
@@ -263,16 +251,15 @@
 
 		<!-- Hotels -->
 		<div class="container-fluid hotels" id="hotels">
-			<h2 id="hotels-h2">Hotels</h2>
-			<p class="hotels-text"> We have personally stayed at Herencia, Los Juaninos, and Hotel de La Soledad and fully recommend all three of them.
+			<h2 class="hotelTitle" id="hotels-h2">Hotels</h2>
+			<p class="hotels-text hotelIntroText1"> We have personally stayed at Herencia, Los Juaninos, and Hotel de La Soledad and fully recommend all three of them. The majority of
+				hotels offer a shuttle service to and from the aiport for a fee. Ask your hotel for more information.
 			</p>
-			<p class="hotels-text">
+			<p class="hotels-text hotelIntroText2">
 				Third-party sites (e.g. Expedia, Travelocity, Hotels.com, etc) are usually cheaper than booking through the hotels directly. However, if you book through a third-party site, 
 				we advise that you contact the hotel afterwards to confirm your reservation.
 				<p class="hotel-warning">
-					<i class="fas fa-exclamation-triangle"></i><strong>Verify your dates when comparing on KAYAK. By default, the range is set for 5 days and 4 nights — Wednesday,
-						7/28 through Sunday, 8/1.
-					</strong>
+					<i class="fas fa-exclamation-triangle"></i><strong><span class="hotelDateVerification"> Verify your dates when comparing on KAYAK. By default, the range is set for 5 days and 4 nights — Wednesday,7/28 through Sunday, 8/1.</span></strong>
 				</p>
 			</p>
 			<div class="row">
@@ -288,9 +275,9 @@
 								<h5 class="card-title">Misión Catedral</h5>
 								<p class="card-text">
 									<i class="fas fa-dollar-sign"></i><i class="fas fa-dollar-sign"></i>
-									~ $50/night USD
+									<span class="hotelPriceNight1">~ $50/night USD</span>
 								</p>
-								<p class="card-text">
+								<p class="card-text hotelDescriptionMisionCatedral">
 									A modest establishment with fantastic views of the cathedral and plaza. This is an affordable option that places you 
 									right in the center of everything. 
 								</p>
@@ -298,13 +285,14 @@
 								<p>
 									<a
 									href="https://www.hotelesmision.com.mx/en/"
-									class="card-website-link"
+									class="card-website-link hotelWebsite1"
 									target="_blank"
 									rel="noopener noreferrer"
 									>Website
 									</a>
 
 									<a
+										class="hotelDirections1"
 										href="https://www.google.com/maps/dir/Hotel+Misi%C3%B3n+Catedral+Morelia,+Ignacio+Zaragoza+37,+Centro+hist%C3%B3rico+de+Morelia,+58000+Morelia,+Mich.,+Mexico/Catedral+de+Morelia,+Avenida+Francisco+I.+Madero+Poniente,+Centro+hist%C3%B3rico+de+Morelia,+Morelia,+Michoac%C3%A1n,+Mexico/Casa+Grande,+Portal+Matamoros,+Calle+Abasolo,+Centro+hist%C3%B3rico+de+Morelia,+Morelia,+Michoac%C3%A1n,+Mexico/@19.7026148,-101.1938136,19.53z/data=!4m20!4m19!1m5!1m1!1s0x85d1fc1822eaee79:0xb10c6eae73eca3f9!2m2!1d-101.1933975!2d19.7032279!1m5!1m1!1s0x842d0e71a95bc4ed:0xaf13bc43e8e69af7!2m2!1d-101.1923185!2d19.702423!1m5!1m1!1s0x842d0e70607dea63:0x937bc9ca56599a37!2m2!1d-101.1942077!2d19.7020755!3e2"
 										target="_blank"
 										rel="noopener noreferrer"
@@ -321,7 +309,7 @@
 									target="_blank"
 									rel="noopener noreferrer">
 									<button class="kayak-button">
-										Compare prices on <img src="/images/hotels/KAYAK.svg" class="kayak-logo" alt="KAYAK"/>
+										<span class="hotelCompareKAYAK1">Compare prices on </span><img src="/images/hotels/KAYAK.svg" class="kayak-logo" alt="KAYAK"/>
 									</button>
 								</a>
 							</div>
@@ -340,11 +328,10 @@
 							<div class="hotels-flex-1">
 								<h5 class="card-title">Alameda</h5>
 								<p class="card-text">
-									<i class="fas fa-dollar-sign"></i
-									><i class="fas fa-dollar-sign"></i>
-									~ $50/night USD
+									<i class="fas fa-dollar-sign"></i><i class="fas fa-dollar-sign"></i>
+									<span class="hotelPriceNight2">~ $50/night USD</span>
 								</p>
-								<p class="card-text">
+								<p class="card-text hotelDescriptionAlameda">
 									Another great option that's also located across from the main plaza and cathedral. This hotel has a more modern feel and has great rates. 
 								</p>
 								<p><i class="fas fa-phone-alt"></i><a href="tel:+52443-456-7890">+52 (443) 456-7890</a></p>
@@ -352,13 +339,14 @@
 								<p>
 									<a
 										href="https://www.hotel-alameda.com.mx/"
-										class="card-website-link"
+										class="card-website-link hotelWebsite2"
 										target="_blank"
 										rel="noopener noreferrer"
 										>Website
 									</a>
 	
 									<a
+										class="hotelDirections2"
 										href="https://www.google.com/maps/dir/Hotel+Alameda+Morelia,+Centro+Hist%C3%B3rico,+Av+Francisco+I.+Madero+Ote+313,+Centro+hist%C3%B3rico+de+Morelia,+58000+Morelia,+Mich.,+Mexico/Catedral+de+Morelia,+Avenida+Francisco+I.+Madero+Poniente,+Centro+hist%C3%B3rico+de+Morelia,+Morelia,+Michoac%C3%A1n,+Mexico/Casa+Grande,+Portal+Matamoros,+Calle+Abasolo,+Centro+hist%C3%B3rico+de+Morelia,+Morelia,+Michoac%C3%A1n,+Mexico/@19.7021468,-101.1935711,18.6z/data=!4m20!4m19!1m5!1m1!1s0x842d0e704f9c5d3f:0x71d6b6f1c4ac8306!2m2!1d-101.1943234!2d19.703155!1m5!1m1!1s0x842d0e71a95bc4ed:0xaf13bc43e8e69af7!2m2!1d-101.1923185!2d19.702423!1m5!1m1!1s0x842d0e70607dea63:0x937bc9ca56599a37!2m2!1d-101.1942077!2d19.7020755!3e2"
 										target="_blank"
 										rel="noopener noreferrer"
@@ -375,7 +363,7 @@
 									target="_blank"
 									rel="noopener noreferrer">
 									<button class="kayak-button">
-										Compare prices on <img src="/images/hotels/KAYAK.svg" class="kayak-logo" alt="KAYAK"/>
+										<span class="hotelCompareKAYAK2">Compare prices on </span><img src="/images/hotels/KAYAK.svg" class="kayak-logo" alt="KAYAK"/>
 									</button>
 								</a>
 							</div>							
@@ -400,9 +388,10 @@
 									<i class="fas fa-dollar-sign"></i
 									><i class="fas fa-dollar-sign"></i
 									><i class="fas fa-dollar-sign"></i>
-									~ $90/night USD
+									<span class="hotelPriceNight3">~ $90/night USD</span>
+
 								</p>
-								<p class="card-text">
+								<p class="card-text hotelDescriptionLosJuaninos">
 									Our number one recommendation due to its great price and location. This hotel is directly across the street from the cathedral.
 								</p>
 								<p><i class="fas fa-phone-alt"></i><a href="tel:+52443-312-0036">+52 (443) 312-0036</a></p>
@@ -411,13 +400,14 @@
 								<p>
 									<a
 										href="https://www.hoteljuaninos.com.mx/"
-										class="card-website-link"
+										class="card-website-link hotelWebsite3"
 										target="_blank"
 										rel="noopener noreferrer"
 										>Website
 									</a>
 	
 									<a
+										class="hotelDirections3"
 										href="https://www.google.com/maps/dir/Hotel+Los+Juaninos,+Avenida+Morelos+Sur,+Centro+hist%C3%B3rico+de+Morelia,+Morelia,+Michoac%C3%A1n,+Mexico/Morelia+Cathedral,+Av+Francisco+I.+Madero+Pte+S%2FN,+Centro+hist%C3%B3rico+de+Morelia,+58000+Morelia,+Mich.,+Mexico/Casa+Grande,+Portal+Matamoros,+Calle+Abasolo,+Centro+hist%C3%B3rico+de+Morelia,+Morelia,+Michoac%C3%A1n,+Mexico/@19.702454,-101.1932971,19z/data=!3m1!4b1!4m20!4m19!1m5!1m1!1s0x842d0e7199b95383:0x38b1a34bb25f55d5!2m2!1d-101.1912921!2d19.702536!1m5!1m1!1s0x842d0e71a95bc4ed:0xaf13bc43e8e69af7!2m2!1d-101.1923185!2d19.702423!1m5!1m1!1s0x842d0e70607dea63:0x937bc9ca56599a37!2m2!1d-101.1942077!2d19.7020755!3e2"
 										target="_blank"
 										rel="noopener noreferrer"
@@ -434,7 +424,7 @@
 									target="_blank"
 									rel="noopener noreferrer">
 									<button class="kayak-button">
-										Compare prices on <img src="/images/hotels/KAYAK.svg" class="kayak-logo" alt="KAYAK"/>
+										<span class="hotelCompareKAYAK3">Compare prices on </span><img src="/images/hotels/KAYAK.svg" class="kayak-logo" alt="KAYAK"/>
 									</button>
 								</a>
 							</div>
@@ -455,9 +445,9 @@
 								<p class="card-text">
 									<i class="fas fa-dollar-sign"></i
 									><i class="fas fa-dollar-sign"></i>
-									~ $60/night USD
+									<span class="hotelPriceNight4">~ $60/night USD</span>
 								</p>
-								<p class="card-text">
+								<p class="card-text hotelDescriptionHerencia">
 									Wonderful hotel that is a short walk away from the cathedral. Personally, this would be our
 									second choice after Hotel Los Juaninos.
 								</p>
@@ -466,13 +456,14 @@
 								<p>
 									<a
 										href="https://www.hherencia.com/home-in/"
-										class="card-website-link"
+										class="card-website-link hotelWebsite4"
 										target="_blank"
 										rel="noopener noreferrer"
 										>Website
 									</a>
 	
 									<a
+										class="hotelDirections4"
 										href="https://www.google.com/maps/dir/HERENCIA+by+Hosting+House,+Avenida+Francisco+I.+Madero+Oriente,+Centro+hist%C3%B3rico+de+Morelia,+Morelia,+Michoac%C3%A1n,+Mexico/Morelia+Cathedral,+Av+Francisco+I.+Madero+Pte+S%2FN,+Centro+hist%C3%B3rico+de+Morelia,+58000+Morelia,+Mich.,+Mexico/Casa+Grande,+Portal+Matamoros,+Calle+Abasolo,+Centro+hist%C3%B3rico+de+Morelia,+Morelia,+Michoac%C3%A1n,+Mexico/@19.7024682,-101.1934718,18z/data=!3m1!4b1!4m20!4m19!1m5!1m1!1s0x842d0e1c4bf26229:0x5adfc825a59cc7c9!2m2!1d-101.1905515!2d19.7027423!1m5!1m1!1s0x842d0e71a95bc4ed:0xaf13bc43e8e69af7!2m2!1d-101.1923185!2d19.702423!1m5!1m1!1s0x842d0e70607dea63:0x937bc9ca56599a37!2m2!1d-101.1942077!2d19.7020755!3e2"
 										target="_blank"
 										rel="noopener noreferrer"
@@ -489,7 +480,7 @@
 									target="_blank"
 									rel="noopener noreferrer">
 									<button class="kayak-button">
-										Compare prices on <img src="/images/hotels/KAYAK.svg" class="kayak-logo" alt="KAYAK"/>
+										<span class="hotelCompareKAYAK4">Compare prices on </span><img src="/images/hotels/KAYAK.svg" class="kayak-logo" alt="KAYAK"/>
 									</button>
 								</a>
 							</div>
@@ -513,9 +504,9 @@
 									><i class="fas fa-dollar-sign"></i
 									><i class="fas fa-dollar-sign"></i
 									><i class="fas fa-dollar-sign"></i>
-									~ $130/night USD
+									<span class="hotelPriceNight5">~ $130/night USD</span>
 								</p>
-								<p class="card-text">
+								<p class="card-text hotelDescriptionSoledad">
 									A crown jewel, this is one of the most luxurious accommodations in all of Morelia. Incredible hotel with fantastic architecture.
 								</p>
 								<p><i class="fas fa-phone-alt"></i><a href="tel:+52443-312-1888">+52 (443) 312-1888</a></p>
@@ -523,13 +514,14 @@
 								<p>
 									<a
 										href="https://hoteldelasoledad.com/en/"
-										class="card-website-link"
+										class="card-website-link hotelWebsite5"
 										target="_blank"
 										rel="noopener noreferrer"
 										>Website
 									</a>
 	
 									<a
+										class="hotelDirections5"
 										href="https://www.google.com/maps/dir/Hotel+de+la+Soledad,+Ignacio+Zaragoza,+Centro+hist%C3%B3rico+de+Morelia,+Morelia,+Michoac%C3%A1n,+Mexico/Morelia+Cathedral,+Av+Francisco+I.+Madero+Pte+S%2FN,+Centro+hist%C3%B3rico+de+Morelia,+58000+Morelia,+Mich.,+Mexico/Casa+Grande,+Portal+Matamoros,+Calle+Abasolo,+Centro+hist%C3%B3rico+de+Morelia,+Morelia,+Michoac%C3%A1n,+Mexico/@19.7029718,-101.1943457,18z/data=!3m1!4b1!4m20!4m19!1m5!1m1!1s0x842d0e703606b85d:0x48c9187fe019a6c0!2m2!1d-101.1931448!2d19.7036333!1m5!1m1!1s0x842d0e71a95bc4ed:0xaf13bc43e8e69af7!2m2!1d-101.1923185!2d19.702423!1m5!1m1!1s0x842d0e70607dea63:0x937bc9ca56599a37!2m2!1d-101.1942077!2d19.7020755!3e2"
 										target="_blank"
 										rel="noopener noreferrer"
@@ -546,7 +538,7 @@
 									target="_blank"
 									rel="noopener noreferrer">
 									<button class="kayak-button">
-										Compare prices on <img src="/images/hotels/KAYAK.svg" class="kayak-logo" alt="KAYAK"/>
+										<span class="hotelCompareKAYAK5">Compare prices on </span><img src="/images/hotels/KAYAK.svg" class="kayak-logo" alt="KAYAK"/>
 									</button>
 								</a>
 							</div>
@@ -570,9 +562,9 @@
 									><i class="fas fa-dollar-sign"></i
 									><i class="fas fa-dollar-sign"></i
 									><i class="fas fa-dollar-sign"></i>
-									~ $200/night USD
+									<span class="hotelPriceNight6">~ $200/night USD</span>
 								</p>
-								<p class="card-text">
+								<p class="card-text hotelDescriptionCanteraDiez">
 									A modern 5-star hotel with breath-taking views of the cathedral. This hotel has rates for under $200 USD on it's own site.
 									We recommend NOT booking this hotel through a third-party site.
 								</p>
@@ -580,13 +572,14 @@
 								<p>
 									<a
 										href="https://www.canteradiezhotel.com/"
-										class="card-website-link"
+										class="card-website-link hotelWebsite6"
 										target="_blank"
 										rel="noopener noreferrer"
 										>Website
 									</a>
 	
 									<a
+										class="hotelDirections6"
 										href="https://www.google.com/maps/dir/Cantera+Diez+Hotel+Boutique,+Benito+Ju%C3%A1rez+63,+Centro+hist%C3%B3rico+de+Morelia,+58000+Morelia,+Mich.,+Mexico/Catedral+de+Morelia,+Avenida+Francisco+I.+Madero+Poniente,+Centro+hist%C3%B3rico+de+Morelia,+Morelia,+Michoac%C3%A1n,+Mexico/Casa+Grande,+Portal+Matamoros,+C.+Abasolo+98,+Centro+hist%C3%B3rico+de+Morelia,+58000+Morelia,+Mich.,+Mexico/@19.7024207,-101.1931284,19.02z/data=!4m20!4m19!1m5!1m1!1s0x842d0e71b7b5e98f:0xc7f77628a8eab120!2m2!1d-101.192383!2d19.7034272!1m5!1m1!1s0x842d0e71a95bc4ed:0xaf13bc43e8e69af7!2m2!1d-101.1923185!2d19.702423!1m5!1m1!1s0x842d0e70607dea63:0x937bc9ca56599a37!2m2!1d-101.1942077!2d19.7020755!3e2"
 										target="_blank"
 										rel="noopener noreferrer"
@@ -603,7 +596,7 @@
 									target="_blank"
 									rel="noopener noreferrer">
 									<button class="kayak-button">
-										Compare prices on <img src="/images/hotels/KAYAK.svg" class="kayak-logo" alt="KAYAK"/>
+										<span class="hotelCompareKAYAK6">Compare prices on </span><img src="/images/hotels/KAYAK.svg" class="kayak-logo" alt="KAYAK"/>
 									</button>
 								</a>
 							</div>
@@ -618,7 +611,7 @@
 		<div class="container-fluid travel-information" id="travel-information">
 			<div class="row">
 				<div class="col-xs-12">
-					<h2>Travel Information</h2>
+					<h2 class="travelInformationTitle">Travel Information</h2>
 					<div class="row travel-info-row">
 						<div class="col-md-2">
 							<img
@@ -629,6 +622,7 @@
 
 						<div class="col-md-10">
 							<a
+								class="travelInformationAirport"
 								href="https://www.google.com/maps/place/General+Francisco+Mujica+International+Airport/@19.7693433,-101.1741037,12z/data=!3m1!5s0x842d19aa987ab5e7:0xccb880dbf3843650!4m5!3m4!1s0x842d18fe1cff6a55:0xd460e1495d49a9a0!8m2!3d19.8464645!4d-101.0281372"
 								target="_blank"
 								rel="noopener noreferrer"
@@ -647,16 +641,17 @@
 						</div>
 
 						<div class="col-md-10">
-							In order to travel to Mexico, you will need a valid U.S. passport.
+							<span class="travelInformationPassport1">In order to travel to Mexico, you will need a valid U.S. passport.
 							If you do not have one or if it has expired, please take the
-							necessary steps to obtain or renew your passport. Please visit the
+							necessary steps to obtain or renew your passport. Please visit the</span>
 							<a
+								class="travelInformationPassport2"
 								href="https://travel.state.gov/content/travel/en/passports.html"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
 								U.S. Department of State website</a
-							> for more information.
+							> <span class="travelInformationPassport3">for more information.</span>
 						</div>
 					</div>
 
@@ -669,12 +664,15 @@
 						</div>
 
 						<div class="col-md-10">
-							The currency in Mexico is the Peso. As of June 2021, the
-							<a href="https://www.xe.com/currencyconverter/convert/?Amount=1&From=USD&To=MXN"
-							target="_blank"
-							rel="noopener noreferrer">
-							exchange rate</a>
-							is $19 MXN for $1 USD. 
+							<span class="travelInformationExchange1">The currency in Mexico is the Peso and the</span>
+							<a
+								class="travelInformationExchange2" 
+								href="https://www.xe.com/currencyconverter/convert/?Amount=1&From=USD&To=MXN"
+								target="_blank"
+								rel="noopener noreferrer">
+								exchange rate
+							</a>
+							<span class="travelInformationExchange3">is usually around $19 MXN for $1 USD.</span>
 						</div>
 					</div>
 				</div>
@@ -685,19 +683,19 @@
 		<div class="container-fluid faqs" id="faqs">
 			<div class="row align-items-center justify-content-center">
 				<div class="col-xs-12">
-					<h2>Frequently Asked Questions</h2>
+					<h2 class="faqTitle">Frequently Asked Questions</h2>
 
 					<p class="faq-body">
-						<strong>Will I need to arrange transportation between my hotel, the cathedral, and the venue?</strong>
-						<p>
+						<strong><span class="faqQuestion1">Will I need to arrange transportation between my hotel, the cathedral, and the venue?</span></strong>
+						<p class="faqAnswer1">
 							The church, the venue, and all of the hotels listed above are all walking distance from one another! Your total commute
 							time between the three should be 5 - 10 minutes. You will not need to arrange for transportation of any kind.
 						</p>
 					</p>
 
 					<p class="faq-body">
-						<strong>Are children allowed?</strong>
-						<p>
+						<strong><span class="faqQuestion2">Are children allowed?</span></strong>
+						<p class="faqAnswer2">
 							The venue is located on a rooftop terrace and is not suitable for small children. However, we are providing a nanny service free of charge for all of
 							our guests and it covers the duration of the entire reception. This is an accommodation provided by the venue and children ages 2 - 9 will be cared for inside of
 							a playroom adjacent to the terrace. We will have one nanny per six kids and parents will be free to check in on their children whenever they please. 
@@ -708,38 +706,37 @@
 					</p>
 
 					<p class="faq-body">
-						<strong>Can I bring a guest?</strong>
-						<p>
+						<strong><span class="faqQuestion3">Can I bring a guest?</span></strong>
+						<p class="faqAnswer3">
 							Unfortunately, we can only admit those listed on your invitation. There is a strict limit on seating and all of the meals
 							are accounted for according to the number of guests that RSVP'd. Thank you for your understanding. 
 						</p>
 					</p>
 
 					<p class="faq-body">
-						<strong>Are you registered anywhere?</strong>
-						<p>
+						<strong><span class="faqQuestion4">Are you registered anywhere?</span></strong>
+						<p class="faqAnswer4">
 							We ask only for your love and presence on our special day but if you were thinking of giving a gift, we would appreciate a cash gift to help us save for our new home. Thank you!
 						</p>
 					</p>
 
 					<p class="faq-body">
-						<strong>What will the weather be like in Morelia during this time of year?</strong>
-						<p>
+						<strong><span class="faqQuestion5">What will the weather be like in Morelia during this time of year?</span></strong>
+						<p class="faqAnswer5">
 							In the summer months, Morelia is usually a perfect 70 - 80°F with clear skies and sunshine. However, it does occasionally rain so at least one rain jacket or coat is recommended.
 						</p>
 					</p>
 
 					<p class="faq-body">
-						<strong>I still have questions, what is the best way to contact you?</strong>
+						<strong><span class="faqQuestion6">I still have questions, what is the best way to contact you?</span></strong>
 						<p>
-							Feel free to shoot us an e-mail at <a href = "mailto: ortizmuro.wedding@gmail.com. ">ortizmuro.wedding@gmail.com. </p>
+							<span class="faqAnswer6">We know that these are uncertain times due to COVID-19. If you feel that you need an extension to RSVP or for any other questions,
+								please send us an e-mail at </span><a class="faqAnswer6Email" href = "mailto: ortizmuro.wedding@gmail.com. ">ortizmuro.wedding@gmail.com</a>.
 						</p>
 					</p>
 				</div>
 			</div>
 		</div>
-
-		<script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
 
 		<!-- Bootstrap scripts -->
 		<script
@@ -761,6 +758,9 @@
 		></script>
 
 		<!-- Custom JavaScript -->
+		<script src="/javascript/languageDatabase.js"></script>
+		<script src="/javascript/switchLanguages.js"></script>
+		<script src="/javascript/removeLanguageNotification.js"></script>
 		<script src="javascript/navbarCollapse.js" type="text/javascript"></script>
 		<script src="javascript/popover.js" type="text/javascript"></script>
 	</body>

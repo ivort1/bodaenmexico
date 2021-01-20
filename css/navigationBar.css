@@ -4,6 +4,7 @@
 	border-color: transparent;
 	border-width: 0 0 0.1rem 0;
 	box-shadow: 0 0 2rem #303030;
+	
 }
 
 .navbar-dark .navbar-toggler {
@@ -33,4 +34,11 @@
 	font-family: "Montserrat", sans-serif;
 	font-weight: 400;
 	margin: auto 0;
+}
+
+/* Remove | when in mobile view */
+@media (max-width: 61.9375em) {
+	#nav-divider {
+        display: none;
+    }
 }
