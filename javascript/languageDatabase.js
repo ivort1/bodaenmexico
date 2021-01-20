@@ -155,7 +155,7 @@ var data = {
 		"faqQuestion3": "¿Podré llevar a un invitado?",
 		"faqQuestion4": "¿Están registrados en alguna parte?",
 		"faqQuestion5": "¿Cómo estará el clima en Morelia durante ese tiempo del año?",
-		"faqQuestion6": "Todavía tengo preguntas, ¿Cuál es la mejor manera de contactarlos?",
+		"faqQuestion6": "Todavía tengo preguntas, ¿cuál es la mejor manera de contactarlos?",
 		"faqAnswer1": "¡La iglesia, recepción y todos los hoteles mencionados se ubican a una distancia muy corta caminando! El tiempo caminando entre los tres es entre 5 a 10 minutos. No necesitas arreglar ningún tipo de transporte.",
 		"faqAnswer2": "El lugar de nuestra recepción está localizada en una  terraza no muy apta para niños pequeños. Sin embargo, estaremos ofreciendo servicio de niñera totalmente gratuito a todos nuestros invitados y cubrirá todo el evento. Esta es una acomodación proveída por nuestro lugar de recepción y niños entre 2 a 9 serán cuidados en un cuarto de juegos junto a la terraza. Tendremos una niñera para cada seis niños y los padres podrán observarlos cuando gusten.",
 		"faqAnswer3": "Desafortunadamente, solo podremos admitir a las personas (nombres) que estén en la lista de invitados. Habrá un límite de sillas correspondiente al número de invitados al igual que la cena. Esperemos que nos comprendan y gracias de antemano.",
