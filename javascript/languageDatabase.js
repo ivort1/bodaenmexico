@@ -21,7 +21,7 @@ var data = {
 
 		//Hotels
 		"hotelTitle": "Hotels",
-		"hotelIntroText1": "We have personally stayed at Herencia, Los Juaninos, and Hotel de La Soledad and fully recommend all three of them. The majority of hotels offer a shuttle service to and from the aiport for a fee. Ask your hotel for more information.",
+		"hotelIntroText1": "We have personally stayed at Herencia, Los Juaninos, and Hotel de La Soledad and fully recommend all three of them. The majority of hotels offer a shuttle service to and from the airport for a fee. Ask your hotel for more information.",
 		"hotelIntroText2": "Third-party sites (e.g. Expedia, Travelocity, Hotels.com, etc) are usually cheaper than booking through the hotels directly. However, if you book through a third-party site, we advise that you contact the hotel afterwards to confirm your reservation.",
 		"hotelDateVerification": "Verify your dates when comparing on KAYAK. By default, the range is set for 5 days and 4 nights — Wednesday, 7/28 through Sunday, 8/1.",
 		"hotelPriceNight1": "~ $50/night USD",
