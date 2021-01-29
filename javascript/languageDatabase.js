@@ -160,7 +160,7 @@ var data = {
 		"faqAnswer2": "El lugar de nuestra recepción está localizada en una  terraza no muy apta para niños pequeños. Sin embargo, estaremos ofreciendo servicio de niñera totalmente gratuito a todos nuestros invitados y cubrirá todo el evento. Esta es una acomodación proveída por nuestro lugar de recepción y niños entre 2 a 9 serán cuidados en un cuarto de juegos junto a la terraza. Tendremos una niñera para cada seis niños y los padres podrán observarlos cuando gusten.",
 		"faqAnswer3": "Desafortunadamente, solo podremos admitir a las personas (nombres) que estén en la lista de invitados. Habrá un límite de sillas correspondiente al número de invitados al igual que la cena. Esperemos que nos comprendan y gracias de antemano.",
 		"faqAnswer4": "Solo les pedimos su cariño y presencia en nuestro día especial pero si estás pensando en darnos un obsequio, te agradeceríamos un regalo monetario y ayudarnos para ahorrar en la compra de nuestro primer hogar. Muchas gracias!",
-		"faqAnswer5": "Durante el verano, el clima de Morelia es usualmente perfecto entre 70-80 F con cielos claros y soleados. Pero, ocasionalmente, llueve. Recomendamos que por lo menos lleves una chaqueta impermeable y/o paraguas.",
+		"faqAnswer5": "Durante el verano, el clima de Morelia es usualmente perfecto entre 70 - 80°F con cielos claros y soleados. Pero, ocasionalmente, llueve. Recomendamos que por lo menos lleves una chaqueta impermeable y/o paraguas.",
 		"faqAnswer6": "Sabemos que estos son tiempos inciertos debido a COVID-19. Si usted siente que necesita una extensión a RSVP o para cualquier otra pregunta, por favor envíenos un correo electrónico a ",
 	}
 }

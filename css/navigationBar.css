@@ -26,6 +26,10 @@
 	color: #000;
 }
 
+#nav-divider:hover {
+	color: #808080;
+}
+
 .fa-bars {
 	margin: auto 0.3rem auto 0;
 }
