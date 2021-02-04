@@ -2,7 +2,7 @@ var data = {
 	"english": {
 		//NavBar
 		"navCeremony": "Ceremony",
-		"navVenue": "Venue",
+		"navVenue": "Reception",
 		"navHotels": "Hotels",
 		"navTravelInformation": "Travel Information",
 		"navFAQ": "FAQs",
@@ -17,7 +17,7 @@ var data = {
 		"ceremonyNameOfChurch": "Cathedral of Morelia",
 
 		//Venue
-		"venueTitle": "Venue",
+		"venueTitle": "Reception",
 
 		//Hotels
 		"hotelTitle": "Hotels",
