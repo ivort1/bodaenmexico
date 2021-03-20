@@ -10,7 +10,7 @@ var data = {
 		//RSVP Jumbotron
 		"rsvpTitle": "Marilynn & Ivan's Wedding",
 		"rsvpDate": "Friday, July 30, 2021",
-		"rsvpDeadline": "The deadline to RSVP is Sunday, March 14",
+		"rsvpDeadline": "The deadline to RSVP is Sunday, April 25",
 
 		// Ceremony
 		"ceremonyTitle": "Ceremony",
@@ -64,7 +64,7 @@ var data = {
 		"travelInformationPassport3": "for more information.",
 		"travelInformationExchange1": "The currency in Mexico is the Peso and the",
 		"travelInformationExchange2": "exchange rate",
-		"travelInformationExchange3": "is usually around $19 MXN for $1 USD.",
+		"travelInformationExchange3": "is usually around $20 MXN for $1 USD.",
 
 		//FAQs
 		"faqTitle": "Frequently Asked Questions",
@@ -92,7 +92,7 @@ var data = {
 		// RSVP Jumbotron
 		"rsvpTitle": "La Boda de Marilynn y Ivan",
 		"rsvpDate": "Viernes, 30 de julio 2021",
-		"rsvpDeadline": "Confirmar asistencia antes del domingo, 14 de marzo del 2021",
+		"rsvpDeadline": "Confirmar asistencia antes del domingo, 25 de abril",
 
 		// Ceremony
 		"ceremonyTitle": "Ceremonia Religiosa",
@@ -146,7 +146,7 @@ var data = {
 		"travelInformationPassport3": "para más información.",
 		"travelInformationExchange1": "La moneda en México es el peso y el",
 		"travelInformationExchange2": "tipo de cambio",
-		"travelInformationExchange3": "es generalmente alrededor de $19 MXD por $1 USD.",
+		"travelInformationExchange3": "es generalmente alrededor de $20 MXD por $1 USD.",
 
 		//FAQs
 		"faqTitle": "Preguntas Frecuentes",
