@@ -6,6 +6,36 @@
 }
 
 /* Desktop */
+@media (min-width: 151em) {
+	.container-fluid.ceremony {
+		padding: 4rem 25rem;
+	}
+}
+
+@media (min-width: 130.25em) and (max-width: 150.9em) {
+	.container-fluid.ceremony {
+		padding: 4rem 20rem;
+	}
+}
+
+@media (min-width: 107em) and (max-width: 130.24em) {
+	.container-fluid.ceremony {
+		padding: 4rem 15rem;
+	}
+}
+
+@media (min-width: 80.75em) and (max-width: 106.9em) {
+	.container-fluid.ceremony {
+		padding: 4rem 10rem;
+	}
+}
+
+@media (min-width: 64.01em) and (max-width: 80.74em) {
+	.container-fluid.ceremony {
+		padding: 4rem 5rem;
+	}
+}
+
 @media (min-width: 64.01em) {
 	.church-venue-text {
 		font-size: 1.5rem;

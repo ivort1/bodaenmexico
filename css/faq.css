@@ -10,9 +10,38 @@
 }
 
 /* Desktop */
-@media (min-width: 64.01em) {
+@media (min-width: 151em) {
+	.container-fluid.faqs {
+		padding: 12rem 45rem;
+	}
+}
+
+@media (min-width: 130.25em) and (max-width: 150.9em) {
+	.container-fluid.faqs {
+		padding: 12rem 35rem;
+	}
+}
+
+@media (min-width: 107em) and (max-width: 130.24em) {
+	.container-fluid.faqs {
+		padding: 12rem 25rem;
+	}
+}
+
+@media (min-width: 80.75em) and (max-width: 106.9em) {
+	.container-fluid.faqs {
+		padding: 12rem 10rem;
+	}
+}
+
+@media (min-width: 64.01em) and (max-width: 80.74em) {
 	.container-fluid.faqs {
 		padding: 12rem 20rem;
+	}
+}
+
+@media (min-width: 64.01em) {
+	.container-fluid.faqs {
 		text-align: left;
 	}
 

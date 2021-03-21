@@ -104,9 +104,9 @@
 }
 
 /* Desktop */
-@media (min-width: 100em) {
+@media (min-width: 151em) {
 	.container-fluid.hotels {
-		padding: 12rem 17rem;
+		padding: 12rem 45rem;
 	}
 
 	#hotels-h2 {
@@ -115,6 +115,24 @@
 
 	.hotels-text {
 		text-align: left;
+	}
+}
+
+@media (min-width: 130.25em) and (max-width: 150.9em) {
+	.container-fluid.hotels {
+		padding: 12rem 35rem;
+	}
+}
+
+@media (min-width: 107em) and (max-width: 130.24em) {
+	.container-fluid.hotels {
+		padding: 12rem 25rem;
+	}
+}
+
+@media (min-width: 80.75em) and (max-width: 106.9em) {
+	.container-fluid.hotels {
+		padding: 12rem 10rem;
 	}
 }
 
