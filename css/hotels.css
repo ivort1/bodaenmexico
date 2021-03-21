@@ -104,7 +104,7 @@
 }
 
 /* Desktop */
-@media (min-width: 151em) {
+@media (min-width: 150em) {
 	.container-fluid.hotels {
 		padding: 12rem 45rem;
 	}
@@ -118,19 +118,19 @@
 	}
 }
 
-@media (min-width: 130.25em) and (max-width: 150.9em) {
+@media (min-width: 130em) and (max-width: 150em) {
 	.container-fluid.hotels {
 		padding: 12rem 35rem;
 	}
 }
 
-@media (min-width: 107em) and (max-width: 130.24em) {
+@media (min-width: 107em) and (max-width: 130em) {
 	.container-fluid.hotels {
 		padding: 12rem 25rem;
 	}
 }
 
-@media (min-width: 80.75em) and (max-width: 106.9em) {
+@media (min-width: 80.75em) and (max-width: 107em) {
 	.container-fluid.hotels {
 		padding: 12rem 10rem;
 	}

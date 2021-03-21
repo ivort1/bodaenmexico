@@ -6,31 +6,31 @@
 }
 
 /* Desktop */
-@media (min-width: 151em) {
+@media (min-width: 150em) {
 	.container-fluid.ceremony {
 		padding: 4rem 25rem;
 	}
 }
 
-@media (min-width: 130.25em) and (max-width: 150.9em) {
+@media (min-width: 130em) and (max-width: 150em) {
 	.container-fluid.ceremony {
 		padding: 4rem 20rem;
 	}
 }
 
-@media (min-width: 107em) and (max-width: 130.24em) {
+@media (min-width: 107em) and (max-width: 130em) {
 	.container-fluid.ceremony {
 		padding: 4rem 15rem;
 	}
 }
 
-@media (min-width: 80.75em) and (max-width: 106.9em) {
+@media (min-width: 80em) and (max-width: 107em) {
 	.container-fluid.ceremony {
 		padding: 4rem 10rem;
 	}
 }
 
-@media (min-width: 64.01em) and (max-width: 80.74em) {
+@media (min-width: 64.01em) and (max-width: 80em) {
 	.container-fluid.ceremony {
 		padding: 4rem 5rem;
 	}
