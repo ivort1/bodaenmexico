@@ -5,26 +5,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<!-- Bootstrap CDN -->
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-			integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-			crossorigin="anonymous"
-		/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"/>
 
 		<!-- Google Fonts -->
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Great+Vibes&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Gentium+Basic:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-			rel="stylesheet"
-		/>
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Great+Vibes&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Gentium+Basic:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"/>
 
 		<!-- Font Awesome -->
-		<script
-			src="https://kit.fontawesome.com/919ba25818.js"
-			crossorigin="anonymous"
-		></script>
+		<script src="https://kit.fontawesome.com/919ba25818.js" crossorigin="anonymous"></script>
 
 		<!-- Custom CSS -->
 		<link rel="stylesheet" href="/css/style.css" />
@@ -36,6 +25,12 @@
 		<link rel="stylesheet" href="/css/hotels.css" />
 		<link rel="stylesheet" href="/css/travelInformation.css" />
 		<link rel="stylesheet" href="/css/faq.css" />
+
+		<!-- Animate CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+		<!-- WOW.js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
 		<title>Marilynn & Ivan | Our Wedding</title>
 		
@@ -52,7 +47,7 @@
 
 	<body class="langWrap">
 		<!-- Navbar -->
-		<nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+		<nav class="navbar fixed-top navbar-expand-xl navbar-dark animate__animated animate__fadeInDown">
 			<div class="container" id="remove">
 				<!-- <a class="navbar-brand" href="#">Navbar</a> -->
 				<button
@@ -70,7 +65,7 @@
 
 				<div class="collapse navbar-collapse"></div> 
 				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-					<div class="navbar-nav">
+					<div class="navbar-nav animate__animated animate__fadeInDown">
 						<a class="nav-link js-scroll-trigger" href="#rsvp">RSVP</a>
 						<a class="nav-link js-scroll-trigger navCeremony" href="#ceremony" >Ceremony</a>
 						<a class="nav-link js-scroll-trigger navVenue" href="#venue">Reception</a>
@@ -78,6 +73,7 @@
 						<a class="nav-link js-scroll-trigger navTravelInformation" href="#travel-information">Travel Information</a>
 						<a class="nav-link js-scroll-trigger navFAQ" href="#faqs">FAQs</a>
 						<a class="nav-link js-scroll-trigger" id="nav-divider">|</a>
+						<a class="nav-link js-scroll-trigger" id="nav-divider-horizontal"></a>
 						<a class="nav-link languageLinks js-scroll-trigger active" href="javascript:void(0)" language="english">English</a>
 						<a class="nav-link languageLinks js-scroll-trigger" href="javascript:void(0)" language="spanish">Español</a>
 					</div>
@@ -86,7 +82,7 @@
 		</nav>
 
 		<!-- Change Language Notification -->
-		<div class="animated fadeInDown" id="changeLanguageNotification">
+		<div class="animate__animated animate__fadeInDown" id="changeLanguageNotification">
 			<div class="langNotFlex1">
 				<button id="languageButton" onclick="removeLanguageNotification()"><i class="fas fa-times fa-lg"></i></button>
 			</div>
@@ -97,16 +93,16 @@
 		</div>
 
 		<!-- RSVP Jumbotron -->
-		<div class="container-fluid flex-master" id="rsvp">
+		<div class="container-fluid flex-master animate__animated animate__fadeIn" id="rsvp">
 			<div class="flex-1">
 				<div class="jumbotron-header">
-					<h1 class="jumbotron-h1 rsvpTitle">Marilynn & Ivan's Wedding</h1>
+					<h1 class="jumbotron-h1 rsvpTitle animate__animated animate__fadeInDown">Marilynn & Ivan's Wedding</h1>
 					
 					<a
 						href="http://ortizmurowedding.rsvpify.com"
 						target="_blank"
 						rel="noopener noreferrer">
-						<button class="rsvp-button jumbotron-rsvp">
+						<button class="rsvp-button jumbotron-rsvp animate__animated animate__fadeInDown">
 							<img
 								class="invitation-image"
 								src="/images/jumbotron/wedding-card.svg"
@@ -118,7 +114,7 @@
 			</div>
 
 			<div class="flex-2">
-				<div class="jumbotron-text">
+				<div class="jumbotron-text animate__animated animate__fadeInDown">
 					<span class="rsvpDate">Friday, July 30, 2021</span>
 					<br>
 					<span>Morelia, Michoacán, México</span>
@@ -131,7 +127,7 @@
 		<!-- Ceremony -->
 		<div class="container-fluid ceremony" id="ceremony">
 			<div class="row align-items-center">
-				<div class="col-lg-6">
+				<div class="col-lg-6 wow animate__animated animate__fadeInLeft">
 					<h2 class="ceremonyTitle">Ceremony</h2>
 					<p class="church-venue-text">
 						<i class="fas fa-church"></i
@@ -145,12 +141,8 @@
 					</p>
 				</div>
 
-				<div class="col-lg-6">
-					<div
-						id="carouselExampleControls"
-						class="carousel slide"
-						data-ride="carousel"
-					>
+				<div class="col-lg-6 wow animate__animated animate__fadeInRight">
+					<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 						<div class="carousel-inner">
 							<div class="carousel-item active">
 								<img
@@ -220,7 +212,7 @@
 		<!-- Venue -->
 		<div class="container-fluid venue" id="venue">
 			<div class="row align-items-center">
-				<div class="col-lg-6 order-lg-2">
+				<div class="col-lg-6 order-lg-2 wow animate__animated animate__fadeInRight">
 					<h2 class="venueTitle">Reception</h2>
 					<p class="church-venue-text">
 						<i class="far fa-building"></i
@@ -234,7 +226,7 @@
 					</p>
 				</div>
 
-				<div class="col-lg-6 order-lg-1">
+				<div class="col-lg-6 order-lg-1 wow animate__animated animate__fadeInLeft">
 					<div class="youtube-container">
 						<iframe
 							class="youtube-video"
@@ -250,7 +242,7 @@
 		</div>
 
 		<!-- Hotels -->
-		<div class="container-fluid hotels" id="hotels">
+		<div class="container-fluid hotels wow animate__animated animate__fadeIn" data-wow-offset="300" data-wow-delay="0.2s" id="hotels">
 			<h2 class="hotelTitle" id="hotels-h2">Hotels</h2>
 			<p class="hotels-text hotelIntroText1"> We have personally stayed at Herencia, Los Juaninos, and Hotel de La Soledad and fully recommend all three of them. The majority of
 				hotels offer a shuttle service to and from the airport for a fee. Ask your hotel for more information.
@@ -609,7 +601,7 @@
 
 		<!-- Travel Information -->
 		<div class="container-fluid travel-information" id="travel-information">
-			<div class="row">
+			<div class="row wow animate__animated animate__fadeIn" data-wow-offset="300" data-wow-delay="0.2s">
 				<div class="col-xs-12">
 					<h2 class="travelInformationTitle">Travel Information</h2>
 					<div class="row travel-info-row">
@@ -682,7 +674,7 @@
 		<!-- FAQs -->
 		<div class="container-fluid faqs" id="faqs">
 			<div class="row align-items-center justify-content-center">
-				<div class="col-xs-12">
+				<div class="col-xs-12 wow animate__animated animate__fadeIn" data-wow-offset="300" data-wow-delay="0.2s">
 					<h2 class="faqTitle">Frequently Asked Questions</h2>
 
 					<p class="faq-body">
@@ -699,9 +691,6 @@
 							The venue is located on a rooftop terrace and is not suitable for small children. However, we are providing a nanny service free of charge for all of
 							our guests and it covers the duration of the entire reception. This is an accommodation provided by the venue and children ages 2 - 9 will be cared for inside of
 							a playroom adjacent to the terrace. We will have one nanny per six kids and parents will be free to check in on their children whenever they please. 
-
-							<!-- Yes, but guests with children under the age of eight are strongly encouraged to take advantage of the nanny service provided by the venue. The cost
-							is $34 USD for 5 hours and one nanny may be assigned up to 6 children. -->
 						</p>
 					</p>
 
@@ -763,5 +752,8 @@
 		<script src="/javascript/removeLanguageNotification.js"></script>
 		<script src="javascript/navbarCollapse.js" type="text/javascript"></script>
 		<script src="javascript/popover.js" type="text/javascript"></script>
+
+		<!-- WOW JavaScript -->
+        <script> new WOW().init();</script>
 	</body>
 </html>

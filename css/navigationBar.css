@@ -30,6 +30,10 @@
 	color: #808080;
 }
 
+#nav-divider-horizontal {
+	border-bottom: #303030 0.1rem solid;
+}
+
 .fa-bars {
 	margin: auto 0.3rem auto 0;
 }
@@ -40,9 +44,16 @@
 	margin: auto 0;
 }
 
-/* Remove | when in mobile view */
-@media (max-width: 61.9375em) {
+/* Remove vertical divider when in mobile view */
+@media (max-width: 74.9375em) {
 	#nav-divider {
+        display: none;
+    }
+}
+
+/* Remove horizontal divider when in desktop view */
+@media (min-width: 75em) {
+	#nav-divider-horizontal {
         display: none;
     }
 }
