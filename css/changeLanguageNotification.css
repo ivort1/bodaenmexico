@@ -40,7 +40,7 @@
 }
 
 /* Fade in and down the language notification */
-.animated {
+/* .animated {
     padding-top:95px;
     margin-bottom:60px;
     -webkit-animation-duration: 1s;
@@ -74,7 +74,7 @@
  .fadeInDown {
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
- }
+ } */
 
  /* Remove language notification when it's a full size navbar */
  @media (min-width: 75em) {

@@ -1,0 +1,110 @@
+.footer {
+    background-color: #303030;
+    color: #c5c5c5;
+	padding: 4rem 4rem;
+    text-align: center;
+
+    /* Flexbox */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer-header {
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer-text {
+    display: none;
+}
+
+.social-media-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.social-media-icons .far {
+    margin-right: 0;
+}
+
+.social-media-icons span:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.copyright-text {
+    margin-top: 2rem;
+}
+
+.footer a:not(a.nav-link) {
+    color: #c5c5c5;
+	transition: color 0.2 ease-out;
+	-webkit-transition: color 0.2s ease-out;
+}
+
+.footer a:hover:not(a.nav-link) {
+	color: #ffffff;
+}
+
+/*<----- Hover.css ----->*/
+/* Float */
+.hvr-float {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+  
+/*<----- Media Queries ----->*/
+/* Desktop */
+@media (min-width: 150em) {
+	.footer {
+		padding: 4rem 45rem;
+        align-items: flex-start;
+	}
+}
+
+@media (min-width: 130em) and (max-width: 150em) {
+	.footer {
+		padding: 4rem 35rem;
+        align-items: flex-start;
+	}
+}
+
+@media (min-width: 107em) and (max-width: 130em) {
+	.footer {
+		padding: 4rem 25rem;
+        align-items: flex-start;
+	}
+}
+
+@media (min-width: 80em) and (max-width: 107em) {
+	.footer {
+		padding: 4rem 10rem;
+        align-items: flex-start;
+	}
+}
+
+@media (min-width: 64.01em) and (max-width: 79.99em) {
+	.footer {
+		padding: 4rem 20rem;
+        align-items: left;
+	}
+
+    #footer-header {
+		text-align: left;
+	}
+}

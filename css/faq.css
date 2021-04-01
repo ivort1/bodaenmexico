@@ -12,31 +12,31 @@
 /* Desktop */
 @media (min-width: 150em) {
 	.container-fluid.faqs {
-		padding: 12rem 45rem;
+		padding: 8rem 45rem;
 	}
 }
 
 @media (min-width: 130em) and (max-width: 150em) {
 	.container-fluid.faqs {
-		padding: 12rem 35rem;
+		padding: 8rem 35rem;
 	}
 }
 
 @media (min-width: 107em) and (max-width: 130em) {
 	.container-fluid.faqs {
-		padding: 12rem 25rem;
+		padding: 8rem 25rem;
 	}
 }
 
 @media (min-width: 80em) and (max-width: 107em) {
 	.container-fluid.faqs {
-		padding: 12rem 10rem;
+		padding: 4rem 10rem;
 	}
 }
 
 @media (min-width: 64.01em) and (max-width: 80em) {
 	.container-fluid.faqs {
-		padding: 12rem 20rem;
+		padding: 4rem 20rem;
 	}
 }
 

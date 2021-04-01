@@ -39,7 +39,7 @@
 	font-weight: 700;
 	padding: 0.75rem 2rem;
 	text-decoration: none;
-	transition: transform 0.6s; /* Animation */
+	/* transition: transform 0.6s; Animation */
 	vertical-align: middle;
 }
 
@@ -49,9 +49,9 @@
 
 .kayak-button:hover {
 	border-color: transparent;
-	transform: scale(
+	/* transform: scale(
 		1.05
-	); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+	); (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 .kayak-button:visited {
@@ -120,19 +120,19 @@
 
 @media (min-width: 130em) and (max-width: 150em) {
 	.container-fluid.hotels {
-		padding: 12rem 35rem;
+		padding: 8rem 35rem;
 	}
 }
 
 @media (min-width: 107em) and (max-width: 130em) {
 	.container-fluid.hotels {
-		padding: 12rem 25rem;
+		padding: 8rem 25rem;
 	}
 }
 
 @media (min-width: 80.75em) and (max-width: 107em) {
 	.container-fluid.hotels {
-		padding: 12rem 10rem;
+		padding: 8rem 10rem;
 	}
 }
 

@@ -5,6 +5,7 @@
 	text-align: center;
 }
 
+
 /* Desktop */
 @media (min-width: 150em) {
 	.container-fluid.ceremony {
