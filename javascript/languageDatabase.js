@@ -21,7 +21,7 @@ var data = {
 
 		//Hotels
 		"hotelTitle": "Hotels",
-		"hotelIntroText1": "We have personally stayed at Herencia, Los Juaninos, and Hotel de La Soledad and fully recommend all three of them. The majority of hotels offer a shuttle service to and from the airport for a fee. Ask your hotel for more information.",
+		"hotelIntroText1": "We have personally stayed at Alameda, Herencia, Los Juaninos, and La Soledad and fully recommend all four of them. The majority of hotels offer a shuttle service to and from the airport for a fee. Ask your hotel for more information.",
 		"hotelIntroText2": "Third-party sites (e.g. Expedia, Travelocity, Hotels.com, etc) are usually cheaper than booking through the hotels directly. However, if you book through a third-party site, we advise that you contact the hotel afterwards to confirm your reservation.",
 		"hotelDateVerification": "Verify your dates when comparing on KAYAK. By default, the range is set for 5 days and 4 nights — Wednesday, 7/28 through Sunday, 8/1.",
 		"hotelPriceNight1": "~ $50/night USD",
@@ -103,7 +103,7 @@ var data = {
 
 		//Hotels
 		"hotelTitle": "Hoteles",
-		"hotelIntroText1": "Nosotros personalmente nos hemos hospedado en los hoteles: Herencia, Los Juaninos y La Soledad y definitivamente los recomendamos. La mayoría de hoteles ofrecen transportación  hacia el hotel o al aeropuerto por una tarifa extra. Preguntar directamente a su hotel de preferencia sobre este servicio/tarifa.",
+		"hotelIntroText1": "Nosotros personalmente nos hemos hospedado en los hoteles: Alameda, Herencia, Los Juaninos y La Soledad y definitivamente los recomendamos. La mayoría de hoteles ofrecen transportación  hacia el hotel o al aeropuerto por una tarifa extra. Preguntar directamente a su hotel de preferencia sobre este servicio/tarifa.",
 		"hotelIntroText2": "Las terceras compañías como Expedia, Travelocity, Booking, Hotels.com etc. usualmente ofrecen tarifas más económicas que directamente reservar con el hotel. Sin embargo, les aconsejamos ponerse en contacto con el hotel para confirmar su reservación.",
 		"hotelDateVerification": "Verificar sus fechas comparando en KAYAK. Está predeterminado por 5 días, 4 noches — miércoles 27 de julio al domingo 1ro de agosto.",
 		"hotelPriceNight1": "~ $50/noche (dolares)",

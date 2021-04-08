@@ -17,13 +17,6 @@
 	box-shadow: 0 0 2rem #303030;
 }
 
-.hotel-warning {
-	font-size: 0.8rem;
-	background-color: #efe7da;
-	border-radius: 0.3rem;
-	padding: 0.7rem;
-}
-
 .kayak-logo {
 	width: 7rem;
 	height: auto;
@@ -101,6 +94,37 @@
 .ribbon:after {
 	top: 0;
 	left: 0.8rem;
+}
+
+/* Date notification */
+#hotelWarning {
+	font-size: 0.8rem;
+	background-color: #efe7da;
+	border-radius: 0.3rem;
+	padding: 0.5em;
+	text-align: left;
+
+	/* Flexbox */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.dateNotification-flex1 {
+	display: flex;
+	flex-direction: column;
+	padding: 0 0.5em;
+}
+
+.dateNotification-flex2 {
+	display: flex;
+	flex-direction: column;
+	padding: 0 0.5em;
+}
+
+.dateNotification-flex1 .fas {
+    margin-right: 0;
 }
 
 /* Desktop */
