@@ -39,6 +39,10 @@
 	text-decoration: none;
 }
 
+.languageLinks.active {
+   font-weight: 700;
+}
+
 /* Fade in and down the language notification */
 /* .animated {
     padding-top:95px;
@@ -81,12 +85,4 @@
 	#changeLanguageNotification {
         display: none;
     }
-
-    .languageLinks.active {
-      border-bottom: #303030 0.2em solid;
-   }
-}
-
-.languageLinks.active {
-   font-weight: 700;
 }

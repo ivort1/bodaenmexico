@@ -69,12 +69,23 @@
 					<div class="navbar-nav">
 						<a class="nav-link js-scroll-trigger" href="#rsvp">RSVP</a>
 						<a class="nav-link js-scroll-trigger navCeremony" href="#ceremony" >Ceremony</a>
-						<a class="nav-link js-scroll-trigger navVenue" href="#venue">Reception</a>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							  Reception
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							  <a class="dropdown-item navVenue" href="#venue">Venue</a>
+							  <a class="dropdown-item" href="#">Schedule</a>
+							  <a class="dropdown-item" href="./food-menu.html">Food Menu</a>
+							</div>
+						  </li>
+						<!-- <a class="nav-link js-scroll-trigger navVenue" href="#venue">Reception</a> -->
 						<a class="nav-link js-scroll-trigger navHotels" href="#hotels">Hotels</a>
 						<a class="nav-link js-scroll-trigger navTravelInformation" href="#travel-information">Travel Information</a>
 						<a class="nav-link js-scroll-trigger navFAQ" href="#faqs">FAQs</a>
 						<a class="nav-link js-scroll-trigger" id="nav-divider">|</a>
-						<a class="nav-link js-scroll-trigger" id="nav-divider-horizontal"></a>
+						<div class="dropdown-divider"></div>
+						<!-- <a class="nav-link js-scroll-trigger" id="nav-divider-horizontal"></a> -->
 						<a class="nav-link languageLinks js-scroll-trigger active" href="javascript:void(0)" language="english">English</a>
 						<a class="nav-link languageLinks js-scroll-trigger" href="javascript:void(0)" language="spanish">Español</a>
 					</div>
@@ -135,9 +146,8 @@
 						><a class="ceremonyNameOfChurch"
 							href="https://www.google.com/maps/place/Morelia+Cathedral/@19.7024226,-101.194546,17z/data=!4m5!3m4!1s0x842d0e71a95bc4ed:0xaf13bc43e8e69af7!8m2!3d19.7024228!4d-101.1923184"
 							target="_blank"
-							rel="noopener noreferrer"
-							>Cathedral of Morelia</a
-						>
+							rel="noopener noreferrer">
+							Cathedral of Morelia</a>
 						<br /><i class="far fa-clock"></i>12:00PM
 					</p>
 				</div>
@@ -772,7 +782,6 @@
 		<script src="/javascript/switchLanguages.js"></script>
 		<script src="/javascript/removeLanguageNotification.js"></script>
 		<script src="javascript/navbarCollapse.js" type="text/javascript"></script>
-		<script src="javascript/popover.js" type="text/javascript"></script>
 
 		<!-- WOW JavaScript -->
         <script> new WOW().init();</script>
