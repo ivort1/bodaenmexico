@@ -17,7 +17,9 @@ const langEl = document.querySelector(".langWrap");
 
 			//NavBar
 			const navCeremony = document.querySelector(".navCeremony");
+			const navReception = document.querySelector(".navReception");
 			const navVenue = document.querySelector(".navVenue");
+			const navFoodMenu = document.querySelector(".navFoodMenu");
 			const navHotels = document.querySelector(".navHotels");
 			const navTravelInformation = document.querySelector(".navTravelInformation");
 			const navFAQ = document.querySelector(".navFAQ");
@@ -107,9 +109,11 @@ const langEl = document.querySelector(".langWrap");
 
 					const attr = el.getAttribute("language");
 
-					//FAQs
+					//Navigation Bar
 					navCeremony.textContent = data[attr].navCeremony;
+					navReception.textContent = data[attr].navReception;
 					navVenue.textContent = data[attr].navVenue;
+					navFoodMenu.textContent = data[attr].navFoodMenu;
 					navHotels.textContent = data[attr].navHotels;
 					navTravelInformation.textContent = data[attr].navTravelInformation;
 					navFAQ.textContent = data[attr].navFAQ;
