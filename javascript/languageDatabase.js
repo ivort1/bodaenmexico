@@ -2,9 +2,7 @@ var data = {
 	"english": {
 		//NavBar
 		"navCeremony": "Ceremony",
-		"navReception": "Reception",
-		"navVenue": "Venue",
-		"navFoodMenu": "Food Menu",
+		"navVenue": "Reception",
 		"navHotels": "Hotels",
 		"navTravelInformation": "Travel Information",
 		"navFAQ": "FAQs",
@@ -19,7 +17,7 @@ var data = {
 		"ceremonyNameOfChurch": "Cathedral of Morelia",
 
 		//Venue
-		"venueTitle": "Venue",
+		"venueTitle": "Reception",
 
 		//Hotels
 		"hotelTitle": "Hotels",
@@ -86,9 +84,8 @@ var data = {
 	"spanish": {
 		//NavBar
 		"navCeremony": "Ceremonia",
-		"navReception": "Recepción",
-		"navVenue": "Lugar",
-		"navFoodMenu": "Menú de Comida",
+		// "navReception": "Recepción",
+		"navVenue": "Recepción",
 		"navHotels": "Hoteles",
 		"navTravelInformation": "Información Para Viajar",
 		"navFAQ": "Preguntas Frecuentes",
@@ -103,7 +100,7 @@ var data = {
 		"ceremonyNameOfChurch": "La Catedral De Morelia",
 
 		//Venue
-		"venueTitle": "Lugar",
+		"venueTitle": "Recepción",
 
 		//Hotels
 		"hotelTitle": "Hoteles",
