@@ -102,13 +102,6 @@
 
 /* Tablet */
 @media (min-width: 47em) and (max-width: 64em) {
-	.flex-master {
-		background: url("../images/jumbotron/ivan-marilynn-mobile-HD.jpg");
-		background-repeat: no-repeat;
-		background-position: center center;
-		background-size: cover;
-	}
-
 	.jumbotron-h1 {
 		font-size: 6rem;
 	}
