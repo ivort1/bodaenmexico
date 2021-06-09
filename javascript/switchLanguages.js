@@ -36,6 +36,8 @@ const langEl = document.querySelector(".langWrap");
 
 			//Venue
 			const venueTitle = document.querySelector(".venueTitle");
+			const cocktailHour = document.querySelector(".cocktailHour");
+			const receptionTitle = document.querySelector(".receptionTitle");
 
 			//Hotels
 			const hotelTitle = document.querySelector(".hotelTitle");
@@ -129,6 +131,8 @@ const langEl = document.querySelector(".langWrap");
 
 					//Venue
 					venueTitle.textContent = data[attr].venueTitle;
+					receptionTitle.textContent = data[attr].receptionTitle;
+					cocktailHour.textContent = data[attr].cocktailHour;
 
 					//Hotels
 					hotelTitle.textContent = data[attr].hotelTitle;

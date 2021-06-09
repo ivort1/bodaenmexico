@@ -9,6 +9,22 @@
 	margin-top: 3rem;
 }
 
+.finance-app-buttons {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.finance-app-button {
+	margin-bottom: 1rem;
+}
+
+.finance-app-image {
+	height: 2rem;
+	width: 5rem;
+}
+
 /* Desktop */
 @media (min-width: 150em) {
 	.container-fluid.faqs {
@@ -47,5 +63,20 @@
 
 	.container-fluid.faqs h2 {
 		text-align: left;
+	}
+
+	.finance-app-buttons {
+		justify-content: flex-start;
+	}
+}
+
+@media (min-width: 42.25em) {
+	.finance-app-buttons {
+		flex-direction: row;
+	}
+
+	.finance-app-button {
+		margin-bottom: 0;
+		margin-right: 1rem;
 	}
 }

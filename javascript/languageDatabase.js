@@ -2,7 +2,7 @@ var data = {
 	"english": {
 		//NavBar
 		"navCeremony": "Ceremony",
-		"navVenue": "Reception",
+		"navVenue": "Venue",
 		"navHotels": "Hotels",
 		"navTravelInformation": "Travel Information",
 		"navFAQ": "FAQs",
@@ -17,7 +17,9 @@ var data = {
 		"ceremonyNameOfChurch": "Cathedral of Morelia",
 
 		//Venue
-		"venueTitle": "Reception",
+		"venueTitle": "Venue",
+		"receptionTitle": "Reception",
+		"cocktailHour": "Cocktail Hour",
 
 		//Hotels
 		"hotelTitle": "Hotels",
@@ -76,8 +78,8 @@ var data = {
 		"faqQuestion6": "I still have questions, what is the best way to contact you?",
 		"faqAnswer1": "The church, the venue, and all of the hotels listed above are all walking distance from one another! Your total commute time between the three should be 5 - 10 minutes. You will not need to arrange for transportation of any kind.",
 		"faqAnswer2": "The venue is located on a rooftop terrace and is not suitable for small children. However, we are providing a nanny service free of charge for all of our guests and it covers the duration of the entire reception. This is an accommodation provided by the venue and children ages 2 - 9 will be cared for inside of a playroom adjacent to the terrace. We will have one nanny per six kids and parents will be free to check in on their children whenever they please.",
-		"faqAnswer3": "Unfortunately, we can only admit those that are part of your RSVP group. There is a strict limit on seating and all of the meals are accounted for according to the number of guests that RSVP'd. Thank you for your understanding.",
-		"faqAnswer4": "We ask only for your love and presence on our special day but if you were thinking of giving a gift, we would appreciate a cash gift to help us save for our new home. Thank you!",
+		"faqAnswer3": "Unfortunately, we can only admit those that are part of your RSVP group. All of the meals are accounted for according to the number of guests that RSVP'd and we will have assigned seating. Therefore, please be aware that those that are not on the guest list will not be admitted into the venue. Thank you for your understanding.",
+		"faqAnswer4": "We ask only for your love and presence on our special day but if you were thinking of giving a gift, we would appreciate a cash gift to help us save for our first home. We can also accept gifts electronically via the platforms below. Thank you!",
 		"faqAnswer5": "In the summer months, Morelia is usually a perfect 70 - 80°F with clear skies and sunshine. However, it does occasionally rain so at least one rain jacket or coat is recommended.",
 		"faqAnswer6": "We know that these are uncertain times due to COVID-19. If you feel that you need an extension to RSVP or for any other questions, please send us an e-mail at ",
 	},
@@ -85,7 +87,8 @@ var data = {
 		//NavBar
 		"navCeremony": "Ceremonia",
 		// "navReception": "Recepción",
-		"navVenue": "Recepción",
+		"navVenue": "El Lugar",
+		"navReception": "Recepción",
 		"navHotels": "Hoteles",
 		"navTravelInformation": "Información Para Viajar",
 		"navFAQ": "Preguntas Frecuentes",
@@ -100,7 +103,9 @@ var data = {
 		"ceremonyNameOfChurch": "La Catedral De Morelia",
 
 		//Venue
-		"venueTitle": "Recepción",
+		"venueTitle": "El Lugar",
+		"receptionTitle": "Recepción",
+		"cocktailHour": "Hora del Cóctel",
 
 		//Hotels
 		"hotelTitle": "Hoteles",
@@ -159,8 +164,8 @@ var data = {
 		"faqQuestion6": "Todavía tengo preguntas, ¿cuál es la mejor manera de contactarlos?",
 		"faqAnswer1": "¡La iglesia, recepción y todos los hoteles mencionados se ubican a una distancia muy corta caminando! El tiempo caminando entre los tres es entre 5 a 10 minutos. No necesitas arreglar ningún tipo de transporte.",
 		"faqAnswer2": "El lugar de nuestra recepción está localizada en una  terraza no muy apta para niños pequeños. Sin embargo, estaremos ofreciendo servicio de niñera totalmente gratuito a todos nuestros invitados y cubrirá todo el evento. Esta es una acomodación proveída por nuestro lugar de recepción y niños entre 2 a 9 serán cuidados en un cuarto de juegos junto a la terraza. Tendremos una niñera para cada seis niños y los padres podrán observarlos cuando gusten.",
-		"faqAnswer3": "Desafortunadamente, solo podremos admitir a las personas (nombres) que son parte de su grupo de RSVP. Habrá un límite de sillas correspondiente al número de invitados al igual que la cena. Esperemos que nos comprendan y gracias de antemano.",
-		"faqAnswer4": "Solo les pedimos su cariño y presencia en nuestro día especial pero si estás pensando en darnos un obsequio, te agradeceríamos un regalo monetario y ayudarnos para ahorrar en la compra de nuestro primer hogar. Muchas gracias!",
+		"faqAnswer3": "Desafortunadamente, solo podremos admitir a las personas (nombres) que son parte de su grupo de RSVP. Todas las comidas se contabilizan de acuerdo con el número de huéspedes que RSVP'd y tendremos asignados asientos. Por lo tanto, tenga en cuenta que aquellos que no están en la lista de invitados no serán admitidos en el lugar. Esperemos que nos comprendan y gracias de antemano.",
+		"faqAnswer4": "Solo les pedimos su cariño y presencia en nuestro día especial pero si estás pensando en darnos un obsequio, te agradeceríamos un regalo monetario y ayudarnos para ahorrar en la compra de nuestro primer hogar. También podemos aceptar regalos electrónicamente a través de las siguientes plataformas. ¡Muchas gracias!",
 		"faqAnswer5": "Durante el verano, el clima de Morelia es usualmente perfecto entre 70 - 80°F con cielos claros y soleados. Pero, ocasionalmente, llueve. Recomendamos que por lo menos lleves una chaqueta impermeable y/o paraguas.",
 		"faqAnswer6": "Sabemos que estos son tiempos inciertos debido a COVID-19. Si usted siente que necesita una extensión a RSVP o para cualquier otra pregunta, por favor envíenos un correo electrónico a ",
 	}
