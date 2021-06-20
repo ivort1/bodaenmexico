@@ -9,10 +9,54 @@
 }
 
 .travel-information-icons {
-	height: 3rem;
-	margin-bottom: 1rem;
-	width: 3rem;
+    height: auto;
+    margin-bottom: 1rem;
+    width: 100%;
+    max-width: 4rem;
+    min-width: 2rem;
 }
+
+.accordion {
+	background-color: #efe7da;
+	border: solid 0.5px #aaaaaa;
+	color: #808080;
+	cursor: pointer;
+	font-size: 1rem;
+	font-weight: 500;
+	padding: 18px;
+	width: 100%;
+	text-align: left;
+	outline: none;
+	transition: 0.2s ease-in-out;
+  }
+  
+  .active, .accordion:hover {
+	color: #000000;
+  }
+  
+  .accordion:after {
+	content: '\002B';
+	color: #777;
+	font-weight: 700;
+	float: right;
+	margin-left: 5px;
+  }
+  
+  .accordion.active:after {
+	content: "\2212";
+  }
+  
+  .panel {
+	  background-color: #FFFFFF;
+	padding: 0 18px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+  }
+
+  .unordered-list {
+	  padding-left:1rem;
+  }
 
 /* Desktop */
 @media (min-width: 150em) {
@@ -41,24 +85,22 @@
 
 @media (min-width: 64.01em) and (max-width: 80em) {
 	.container-fluid.travel-information {
-		padding: 4rem 20rem;
+		padding: 4rem 15rem;
 	}
 }
 
 @media (min-width: 64.01em) {
 	.container-fluid.travel-information {
-		text-align: right;
+		text-align: left;
 	}
 
 	.travel-information-icons {
-		height: 5rem;
 		margin-bottom: 0rem;
-		width: 5rem;
 	}
 
 	.row.travel-info-row {
-		flex-direction: row-reverse;
-		justify-content: flex-end;
+		flex-direction: row;
+		justify-content: flex-start;
 		align-items: center;
 	}
 }

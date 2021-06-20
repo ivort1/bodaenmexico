@@ -72,31 +72,31 @@
 /*<----- Media Queries ----->*/
 /* Desktop */
 @media (min-width: 150em) {
-	.footer {
-		padding: 4rem 45rem;
+	.container-fluid.footer {
+		padding: 8rem 45rem;
 	}
 }
 
 @media (min-width: 130em) and (max-width: 150em) {
-	.footer {
-		padding: 4rem 35rem;
+	.container-fluid.footer {
+		padding: 8rem 35rem;
 	}
 }
 
 @media (min-width: 107em) and (max-width: 130em) {
-	.footer {
-		padding: 4rem 25rem;
+	.container-fluid.footer {
+		padding: 8rem 25rem;
 	}
 }
 
 @media (min-width: 80em) and (max-width: 107em) {
-	.footer {
+	.container-fluid.footer {
 		padding: 4rem 10rem;
 	}
 }
 
-@media (min-width: 64.01em) and (max-width: 79.99em) {
-	.footer {
-		padding: 4rem 20rem;
-    }
+@media (min-width: 64.01em) and (max-width: 80em) {
+	.container-fluid.footer {
+		padding: 4rem 15rem;
+	}
 }
