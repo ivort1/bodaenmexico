@@ -22,6 +22,8 @@ const langEl = document.querySelector(".langWrap");
 			// const navFoodMenu = document.querySelector(".navFoodMenu");
 			const navHotels = document.querySelector(".navHotels");
 			const navTravelInformation = document.querySelector(".navTravelInformation");
+				const navBasicInformation = document.querySelector(".navBasicInformation");
+				const navThingsToDo = document.querySelector(".navThingsToDo");
 			const navFAQ = document.querySelector(".navFAQ");
 
 
@@ -118,6 +120,8 @@ const langEl = document.querySelector(".langWrap");
 					// navFoodMenu.textContent = data[attr].navFoodMenu;
 					navHotels.textContent = data[attr].navHotels;
 					navTravelInformation.textContent = data[attr].navTravelInformation;
+						navBasicInformation.textContent = data[attr].navBasicInformation;
+						navThingsToDo.textContent = data[attr].navThingsToDo;
 					navFAQ.textContent = data[attr].navFAQ;
 					
 					// RSVP Jumbotron
