@@ -1,6 +1,6 @@
 .flex-master {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.308),rgba(0,0,0,0), rgb(0,0,0,0.308));
-	background: url("../images/jumbotron/ivan-marilynn-mobile-optimized.webp");
+	background: url("../assets/images/jumbotron/ivan-marilynn-mobile-optimized.webp");
 	background-position: center center;
 	background-size: cover;
 	border-radius: 0;
@@ -86,7 +86,7 @@
 /* Desktop */
 @media (min-width: 64.01em) {
 	.flex-master {
-		background: url("../images/jumbotron/ivan-marilynn-front-desktop.jpg");
+		background: url("../assets/images/jumbotron/ivan-marilynn-front-desktop.jpg");
 		background-repeat: no-repeat;
 		background-position: center right;
 		background-size: cover;

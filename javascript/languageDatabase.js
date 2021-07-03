@@ -5,6 +5,8 @@ var data = {
 		"navVenue": "Venue",
 		"navHotels": "Hotels",
 		"navTravelInformation": "Travel Information",
+			"navBasicInformation": "Basic Information",
+			"navThingsToDo": "Things to do in Morelia",
 		"navFAQ": "FAQs",
 
 		//RSVP Jumbotron
@@ -91,6 +93,8 @@ var data = {
 		"navReception": "Recepción",
 		"navHotels": "Hoteles",
 		"navTravelInformation": "Información Para Viajar",
+			"navBasicInformation": "Información Básica",
+			"navThingsToDo": "Qué Hacer en Morelia",
 		"navFAQ": "Preguntas Frecuentes",
 
 		// RSVP Jumbotron
