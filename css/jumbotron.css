@@ -50,7 +50,7 @@
 	border-radius: 0.3rem;
 	border-style: solid;
 	color: #303030;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	padding: 0.75rem 2rem;
 	text-decoration: none;
 	transition: transform 0.6s; /* Animation */
@@ -77,10 +77,10 @@
 	text-decoration: none;
 }
 
-.invitation-image {
+.button-image {
 	margin-right: 0.5rem;
-	width: 3rem;
-	height: 3rem;
+	width: 1.5rem;
+	height: auto;
 }
 
 /* Desktop */

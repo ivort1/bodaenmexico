@@ -12,7 +12,7 @@ var data = {
 		//RSVP Jumbotron
 		"rsvpTitle": "Marilynn & Ivan's Wedding",
 		"rsvpDate": "Friday, July 30, 2021",
-		"rsvpDeadline": "The RSVP list will close on Sunday, July 4",
+		"rsvpDeadline": "Thank you to everyone who RSVP'd! Seating chart coming soon.",
 
 		// Ceremony
 		"ceremonyTitle": "Ceremony",
@@ -100,7 +100,7 @@ var data = {
 		// RSVP Jumbotron
 		"rsvpTitle": "La Boda de Marilynn y Ivan",
 		"rsvpDate": "Viernes, 30 de julio 2021",
-		"rsvpDeadline": "La lista de RSVP se cerrará el domingo 4 de julio",
+		"rsvpDeadline": "Gracias a aquellos que confirmaron. Tabla de asientos, próximamente.",
 
 		// Ceremony
 		"ceremonyTitle": "Ceremonia Religiosa",
